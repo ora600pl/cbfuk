@@ -31,14 +31,14 @@ def main(argv):
          print (help_msg)
          sys.exit()
       elif opt in ("-i", "--interval"):
-         interval = arg
+         interval = float(arg)
       elif opt in ("-f", "--file"):
          inputfile = arg
       elif opt in ("-c", "--chunk"):
-         chunk_size = arg
+         chunk_size = int(arg)
       elif opt in ("-w", "--wait"):
-         wait_time = arg
-         
+         wait_time = int(arg)
+
    print ('Input file is ', inputfile)
    print ('Chunk size is ', chunk_size)
    print('Interval is ', interval)
